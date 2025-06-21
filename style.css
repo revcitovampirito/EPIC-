@@ -1,0 +1,203 @@
+/* Importar una fuente sans-serif de Google Fonts si no la tienes ya */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Open Sans', sans-serif; /* Tipografía sans-serif */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Un color de fondo claro para el minimalismo */
+    color: #333; /* Color de texto general */
+}
+
+/* Header */
+header {
+    background-color: #1a2a40; /* Un azul oscuro para el encabezado */
+    padding: 10px 0;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar los elementos de la navegación */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400; /* Regular para los enlaces */
+    padding: 5px 0;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+header nav ul li a:hover {
+    color: #a0c4ff; /* Un azul más claro al pasar el ratón */
+}
+
+/* Títulos (h1, h2, h3) */
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif; /* Misma tipografía */
+    font-weight: 700; /* Negritas */
+    color: #333; /* Color oscuro para los títulos */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Main Content Sections */
+main section {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    background-color: #e0e7ee; /* Un tono gris azulado claro para esta sección */
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Eliminar espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+/* Feature Section (Historia) */
+.features-section {
+    background-color: #f9f9f9;
+}
+
+.features-section .feature-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas (aunque dijiste no responsivo, es buena práctica) */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.features-section .feature-item {
+    text-align: center;
+    max-width: 300px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.features-section .feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about-us-section {
+    background-color: #e0e7ee; /* Mismo tono gris azulado claro */
+}
+
+.about-us-section .articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptativo a 250px mínimo */
+    gap: 30px;
+}
+
+.about-us-section article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-us-section article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.about-us-section article p {
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+.call-to-action-section {
+    background-color: #3f51b5; /* Un morado/azul intenso para el CTA */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.call-to-action-section h2 {
+    color: white; /* Títulos en blanco para contraste */
+}
+
+.call-to-action-section p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.call-to-action-section img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.call-to-action-section button {
+    background-color: #8c7ae6; /* Un morado distintivo para el botón */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action-section button:hover {
+    background-color: #a0c4ff; /* Un azul más claro al pasar el ratón */
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a40; /* Mismo azul oscuro del encabezado */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-nav ul li {
+    margin: 0 10px;
+}
+
+footer .footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-nav ul li a:hover {
+    color: #a0c4ff;
+}
